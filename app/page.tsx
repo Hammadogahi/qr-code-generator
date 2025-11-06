@@ -251,7 +251,7 @@ export default function QRCodeGeneratorApp() {
         {/* History */}
         <hr className="my-6" />
         <div className="flex items-center justify-between">
-          <h2 className="text-lg font-semibold">History</h2>
+          <h2 className="text-lg font-semibold text-black">History</h2>
           <button onClick={clearHistory} className="text-sm text-red-600">
             Clear
           </button>
@@ -278,14 +278,14 @@ export default function QRCodeGeneratorApp() {
               <div className="mt-2 flex gap-2">
                 <button
                   onClick={() => useHistoryItem(item)}
-                  className="text-sm px-2 py-1 border rounded"
+                  className="text-sm px-2 py-1 border rounded text-gray-500"
                 >
                   Use
                 </button>
                 <a
                   href={item.pngDataUrl}
                   download={`qr-${item.id}.png`}
-                  className="text-sm px-2 py-1 border rounded"
+                  className="text-sm px-2 py-1 border rounded text-gray-500"
                 >
                   Download
                 </a>
